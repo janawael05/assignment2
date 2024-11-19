@@ -10,13 +10,19 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    patient.cpp \
+    patientscheduler.cpp \
+    simulation.cpp
 
 HEADERS += \
-    mainwindow.h
+    patient.h \
+    patientscheduler.h \
+    simulation.h
 
 FORMS += \
-    mainwindow.ui
+    patient.ui \
+    patientscheduler.ui \
+    simulation.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

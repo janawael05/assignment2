@@ -1,11 +1,8 @@
-#include "mainwindow.h"
+#include "Simulation.h"
 
-#include <QApplication>
-
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
-    return a.exec();
+int main() {
+    Simulation simulation;
+    simulation.populatePatients(100); // Example: Populate with 100 patients
+    simulation.startSimulation();
+    return 0;
 }
